@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;}
+
+    
+
+
+
+
+
+
+
+
+    
+
+.ImagenInicio{
+    
+    background-position: relative;
+    background-size: auto auto;
+    
+    
+    
+
+}
+
+.contenedorLogo{
+    width: 35%;
+    display: inline-block;
+
+}
+
+.Logo{
+    width: 60%;
+    display: inline-block;
+    
+
+
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-size: cover;
+    background-position:high;
+    background-image: url(../assets/img/crossfondo.jpg);
+
+    backface-visibility: 95%;
+
+    
+
+    color: rgba(36, 13, 10, 0.463);
+
+}
+
+
+.Navegacion{
+    display: inline-block;
+    
+
+
+
+}
+
+.ListaNavegacion{
+    list-style: none;
+    display: fixed;
+    padding: left 2vh;
+    text-decoration: none;
+    text-decoration-color: aliceblue;
+   font-size: 1,3em;
+
+
+
+    
+    
+    
+
+}
+
+.ListaItem {
+    list-style: none;
+    display: inline-block;
+   margin:3vh;
+   height: 3vh;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: bold;
+ 
+
+}
+
+.LinkNav{
+    text-decoration: none;
+    color:rgb(26, 62, 62);
+    
+
+}
+
+.Titulo{
+text-align: center;
+
+}
+
+h1{
+    color: #6b2929;
+
+}
+
+
+
+.Redes{
+    -ms-flex-align: center;
+
+}
+
+.DivPosiciones{
+
+margin: 10vh;
+padding-left: 10;
+
+}
+
+.DivRutinas{
+margin: 10vh;
+padding: 3vh;
+text-align: center;
+
+}
+
+.ParrafoRutinas{
+
+    text-align: center;
+}
+
+
+
+
+
+
+
