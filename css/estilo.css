@@ -145,11 +145,12 @@ text-align: center;
     font-size: 20px;
 }
 
-.mainContacto{
+.CotainerContacto{
 
     display: flex;
-    align-items: right;
+    align-items: center;
     flex-direction: column;
+    align-content: center;
 
 }
 
@@ -160,5 +161,86 @@ text-align: center;
 }
 
 
+.espacio{
+margin-top: 40px;
+
+}
+
+.headerContacto{
+display: flex;
+}
+
+.h1Contacto{
+flex-direction: column;
+justify-content: center;
+
+}
 
 
+.PosicionesDiv{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-areas:
+    "DivPosiciones1 DivPosiciones2"
+    "DivPosiciones3 DivPosiciones4"
+    "DivPosiciones5 DivPosiciones6"
+    "DivPosiciones7 DivPosiciones8"
+    "DivPosiciones9 DivPosiciones10"
+    "DivPosiciones11 DivPosiciones12";
+    grid-template-rows: repeat (12,8%);
+    grid-template-columns: 50% 50%;
+
+}
+
+.DivPosiciones1{
+    grid-area: DivPosiciones1;
+}
+.DivPosiciones2{
+    grid-area:DivPosiciones2;
+}
+.DivPosiciones3{
+    grid-area:DivPosiciones3;
+}
+.DivPosiciones4{
+    grid-area:DivPosiciones4;
+}
+.DivPosiciones5{
+    grid-area:DivPosiciones5;
+}
+.DivPosiciones6{
+    grid-area:DivPosiciones6;
+}
+.DivPosiciones7{
+    grid-area:DivPosiciones7;
+}
+.DivPosiciones8{
+    grid-area:DivPosiciones8;
+}
+.DivPosiciones9{
+    grid-area:DivPosiciones9;
+}
+.DivPosiciones10{
+    grid-area:DivPosiciones10;
+}
+.DivPosiciones11{
+    grid-area:DivPosiciones11;
+}
+.DivPosiciones12{
+    grid-area:DivPosiciones12;
+}
+
+.footer{
+    margin-top: 600px;
+}
+
+.tituloPosiciones{
+    color:rgb(7, 44, 32);
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bolder;
+    
+}
+    
+    
