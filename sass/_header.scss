@@ -1,0 +1,88 @@
+.header{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        li{
+            padding: 10px;
+            a{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .color{
+                color: #fff;
+            }
+        }
+    }
+    .sectionHeader__button--amarillo{
+        background: #FFC107;
+        color: #000;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        
+    }
+    .sectionHeader__button--verde{
+        @extend .sectionHeader__button--amarillo;
+        background: #06c846;
+    }
+
+}
+
+.contenedor{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contenedorForm{
+    @extend .contenedor;
+    width: 50%;
+    
+}
+
+.container{
+    /*display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;*/
+    /*como implementar un mixin*/
+    @include flexbox(map-get($map-flex,space-between), map-get($map-flex,space-center),map-get($map-flex,row),100%,50vh,2px solid gray);
+}
+.box{
+   /* display:flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: column;*/
+    @include flexbox(space-evenly,stretch,column,50%,20vh);
+}
+
+/*medias queries del header */
+@media screen and (max-width: 768px){
+    .header{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            li{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }  
+}
