@@ -1,0 +1,39 @@
+
+.CotainerContacto{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width:50% ;}
+
+    .divMensaje{
+        width: 50%;
+    }
+    
+
+.emailDiv{
+    padding-top: 10px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:50%
+    }
+
+.imputs{
+    align-items: center;
+    flex-direction: column;
+     }
+
+.enviarImput{
+    position: relative;
+    text-align: center;}
+
+
+
+.headerContacto{
+display: flex;}
+
+.h1Contacto{
+flex-direction: column;
+justify-content: center;}

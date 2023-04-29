@@ -1,9 +1,86 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;}
+
+@import"reset.scss";
+@import"fonts.scss";
+@import"footer.scss";
+@import"body.scss";
+@import"mainIndex.scss";
+@import"mainPosiciones.scss";
+@import"mainContacto.scss";
+@import"mainRutinas.scss";
 
 
-@import "variables.scss";
-@import "reset.scss";
+
+
+
+
+
+        .body__main__h1__2{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(37, 36, 36); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
+
+
+.body__main__div{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    padding: 40px;}
+
+.body__main__div__h2{
+color: rgb(37, 36, 36); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
+
+
+.body__main__div__img{
+    width: 300px;
+    height: 300px;}
+        
+
+.body__main__div__h5{
+        color: #6a1919;
+        background-color: beige;
+        font-size: 20px;}
+
+.body__main__div__p{
+            color: rgb(22, 68, 108);
+            font-size: 40px;
+            background-color: beige;}
+        
+
+
+
+
+
+.body__main__div__p{
+    color: rgb(22, 68, 108);
+    font-size: 40px;
+    background-color: beige;}
+
+
+
+.tamañoCarousel{
+    font-weight: 40px;}
+
+
+
+
+.headerContacto{
+display: flex;}
+
+.h1Contacto{
+flex-direction: column;
+justify-content: center;}
+
+
+
+
+.tituloPosiciones{
+    color:rgb(7, 44, 32);
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bolder;}
+
+
+    
+    
+    
     
