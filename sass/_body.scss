@@ -6,49 +6,10 @@ body{
     color: rgba(36, 13, 10, 0.463);
     font-family: 'Lobster', cursive;
 
-    .body__header__div{
-        width: 25%;
-        display: inline-block;}
-
-    .body__header__nav{
-            display: inline-block;}
-
-
-        .body__header__nav__ul{
-                list-style: none;
-                display: fixed;
-                padding: left 60px;
-                text-decoration: none;
-                text-decoration-color: aliceblue;
-               font-size: 40px;}
-
-               @media (max-width:100px){
-                .body__header__nav__ul__li{
-                display:flex;
-                flex-wrap:nowrap;
-
-                
-                align-content: wrap;}}
-
-
-               
-
-        .body__header__nav__ul__li {
-                list-style: none;
-                display: inline-block;
-               margin:3vh;
-               height: 3vh;
-                text-decoration: none;
-                font-size: 3vh;
-                font-weight: bold;} 
-
-                .body__header__nav__ul__li :hover{color: rgb(255, 8, 0);}
-                
-
-                .body__header__nav__ul__a{
-                    text-decoration: none;
-                    color:rgba(29, 124, 124, 0.921);}}
+}
 
                     
 .body__main{
     margin-bottom: 200px;}
+
+    

@@ -1,4 +1,12 @@
 
+
+.tituloPosiciones{
+    color:rgb(7, 44, 32);
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bolder;}
+
+
 .DivPosiciones{
 
     margin: 10px;
@@ -22,7 +30,7 @@
 .PosicionesDiv{
 
     display: grid;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     grid-template-areas:
     "DivPosiciones1 DivPosiciones2"
     "DivPosiciones3 DivPosiciones4"
@@ -32,23 +40,10 @@
     "DivPosiciones11 DivPosiciones12";
     grid-template-rows: 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8%;
     grid-template-columns: 50% 50%;
-    padding: 10px;
-    margin: 40px;}
+    margin: 50px;}
 
     
-    @media (max-width:100px){
-
-        .PosicionesDiv{
-            display: flex;
-            flex-wrap: nowrap;
-            grid-template-rows: 100%;
-            grid-template-columns: 100%;
-            padding: 100px;
-            margin: 40px;
-        
-
-
-        }}
+    
 
 .DivPosiciones1{
     grid-area:DivPosiciones1;}
@@ -75,4 +70,15 @@
 .DivPosiciones12{
     grid-area:DivPosiciones12;}
 
-    
+
+    @media (min-width:280px) and (max-width:800px) {
+        .PosicionesDiv{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0px;
+        
+        
+    }}
+
+
+   

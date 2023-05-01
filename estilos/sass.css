@@ -1,9 +1,79 @@
 @charset "UTF-8";
+/*maps*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.body__header__div {
+  width: 25%;
+  display: inline-block;
+}
+
+.body__header__nav {
+  display: inline-block;
+}
+
+.body__header__nav__ul {
+  list-style: none;
+  display: fixed;
+  padding: left 60px;
+  text-decoration: none;
+  text-decoration-color: aliceblue;
+  font-size: 40px;
+}
+
+.body__header__nav__ul__li {
+  list-style: none;
+  display: inline-block;
+  margin: 3vh;
+  height: 3vh;
+  text-decoration: none;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.body__header__nav__ul__li :hover {
+  color: rgb(255, 8, 0);
+}
+
+.body__header__nav__ul__a {
+  text-decoration: none;
+  color: rgba(29, 124, 124, 0.921);
+}
+
+@media (min-width: 280) and (max-width: 800) {
+  .body__header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .body__header__nav__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.body__main__h1__2 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(37, 36, 36);
+  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+}
+
+.body__main__div {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px;
+  padding: 40px;
+}
+
+.body__main__div__h2 {
+  color: rgb(37, 36, 36);
+  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
 }
 
 /*si es necesario agregar todas las clases del footer y anidar y usar variables*/
@@ -24,47 +94,16 @@ body {
   color: rgba(36, 13, 10, 0.463);
   font-family: "Lobster", cursive;
 }
-body .body__header__div {
-  width: 25%;
-  display: inline-block;
-}
-body .body__header__nav {
-  display: inline-block;
-}
-body .body__header__nav__ul {
-  list-style: none;
-  display: fixed;
-  padding: left 60px;
-  text-decoration: none;
-  text-decoration-color: aliceblue;
-  font-size: 40px;
-}
-@media (max-width: 100px) {
-  body .body__header__nav__ul__li {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: wrap;
-  }
-}
-body .body__header__nav__ul__li {
-  list-style: none;
-  display: inline-block;
-  margin: 3vh;
-  height: 3vh;
-  text-decoration: none;
-  font-size: 3vh;
-  font-weight: bold;
-}
-body .body__header__nav__ul__li :hover {
-  color: rgb(255, 8, 0);
-}
-body .body__header__nav__ul__a {
-  text-decoration: none;
-  color: rgba(29, 124, 124, 0.921);
-}
 
 .body__main {
   margin-bottom: 200px;
+}
+
+.body__main__div {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px;
+  padding: 40px;
 }
 
 .body__main__h1 {
@@ -74,6 +113,38 @@ body .body__header__nav__ul__a {
   text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
   animation: backInLeft;
   animation-duration: 3s;
+}
+
+.body__main__div__h5 {
+  color: #6a1919;
+  background-color: beige;
+  font-size: 20px;
+}
+
+.body__main__div__p {
+  color: rgb(22, 68, 108);
+  font-size: 40px;
+  background-color: beige;
+}
+
+.tamañoCarousel {
+  margin-top: 100px;
+  width: 70%;
+  height: 100px;
+  opacity: 1;
+}
+
+.body__main__div__p {
+  color: rgb(22, 68, 108);
+  font-size: 40px;
+  background-color: beige;
+}
+
+.tituloPosiciones {
+  color: rgb(7, 44, 32);
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bolder;
 }
 
 .DivPosiciones {
@@ -101,20 +172,9 @@ body .body__header__nav__ul__a {
   grid-template-areas: "DivPosiciones1 DivPosiciones2" "DivPosiciones3 DivPosiciones4" "DivPosiciones5 DivPosiciones6" "DivPosiciones7 DivPosiciones8" "DivPosiciones9 DivPosiciones10" "DivPosiciones11 DivPosiciones12";
   grid-template-rows: 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8%;
   grid-template-columns: 50% 50%;
-  padding: 10px;
-  margin: 40px;
+  margin: 50px;
 }
 
-@media (max-width: 100px) {
-  .PosicionesDiv {
-    display: flex;
-    flex-wrap: nowrap;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
-    padding: 100px;
-    margin: 40px;
-  }
-}
 .DivPosiciones1 {
   grid-area: DivPosiciones1;
 }
@@ -163,6 +223,13 @@ body .body__header__nav__ul__a {
   grid-area: DivPosiciones12;
 }
 
+@media (min-width: 280px) and (max-width: 800px) {
+  .PosicionesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+}
 .CotainerContacto {
   position: relative;
   display: flex;
@@ -223,68 +290,6 @@ body .body__header__nav__ul__a {
   text-align: center;
   color: rgb(145, 13, 13);
   text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
-}
-
-.body__main__h1__2 {
-  text-align: center;
-  font-size: 40px;
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
-}
-
-.body__main__div {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 20px;
-  padding: 40px;
-}
-
-.body__main__div__h2 {
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
-}
-
-.body__main__div__img {
-  width: 300px;
-  height: 300px;
-}
-
-.body__main__div__h5 {
-  color: #6a1919;
-  background-color: beige;
-  font-size: 20px;
-}
-
-.body__main__div__p {
-  color: rgb(22, 68, 108);
-  font-size: 40px;
-  background-color: beige;
-}
-
-.body__main__div__p {
-  color: rgb(22, 68, 108);
-  font-size: 40px;
-  background-color: beige;
-}
-
-.tamañoCarousel {
-  font-weight: 40px;
-}
-
-.headerContacto {
-  display: flex;
-}
-
-.h1Contacto {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tituloPosiciones {
-  color: rgb(7, 44, 32);
-  font-size: 30px;
-  padding: 20px;
-  font-weight: bolder;
 }
 
 /*# sourceMappingURL=sass.css.map */
