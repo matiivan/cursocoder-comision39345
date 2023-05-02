@@ -1,7 +1,11 @@
-.body__header__div {
-    width: 25%;
-    display: inline-block;
+
+.body__header {
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+
 
 .body__header__nav {
     display: inline-block;
@@ -28,23 +32,27 @@
     font-weight: bold;
 }
 
-.body__header__nav__ul__li :hover {
-    color: rgb(255, 8, 0);
+.body__header__nav__ul__li{
+    @include hover_mixin
 }
 
 
 .body__header__nav__ul__a {
     text-decoration: none;
     color: rgba(29, 124, 124, 0.921);
+
+
 }
 
-@media (min-width:280) and (max-width:800) {
+@media  (min-device-width: 100px) and (max-device-width: 800px)
+{
     .body__header {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
     }
+
 
     .body__header__nav__ul {
         display: flex;

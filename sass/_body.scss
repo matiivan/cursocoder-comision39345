@@ -1,15 +1,18 @@
 body{
-    background-size: cover;
-    background-position:relative;
+ 
     background-image: url(../assets/img/crossfondo.jpg);
-    height: 800px;
-    color: rgba(36, 13, 10, 0.463);
+    background-repeat: no-repeat;
+    color: rgb(127, 23, 23); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
     font-family: 'Lobster', cursive;
+    
 
 }
 
                     
 .body__main{
-    margin-bottom: 200px;}
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
 
     

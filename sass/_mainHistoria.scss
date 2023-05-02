@@ -1,14 +1,29 @@
 
 .body__main__div{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap:nowrap;
     margin: 20px;
-    padding: 40px;}
+    padding: 40px;
+}
+
+
     
 .body__main__div__h2{
-    color: rgb(37, 36, 36); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
+    color: rgb(37, 36, 36); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em
+}
     
     
-    .body__main__div__img{
-        width: 300px;
-        height: 300px;}
+.body__main__div__img{
+    width: 300px;
+    height: 300px;  
+}
+@media(min-device-width:180px) and (max-device-width:700px){
+
+            .body__main__div{
+            display: flex;
+            flex-wrap: wrap;
+        
+            }
+        body{
+            background-image: none;
+        }}    

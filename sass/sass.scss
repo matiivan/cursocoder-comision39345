@@ -1,5 +1,6 @@
 @import"variables.scss";
 @import"reset.scss";
+@import"mixins.scss";
 @import"header.scss";
 @import"main.scss";
 @import"fonts.scss";
@@ -7,5 +8,9 @@
 @import"body.scss";
 @import"mainIndex.scss";
 @import"mainPosiciones.scss";
+@import"mainHistoria.scss";
 @import"mainContacto.scss";
 @import"mainRutinas.scss";
+
+
+/* inciar sass sass --watch sass:estilos*/

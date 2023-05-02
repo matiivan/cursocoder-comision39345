@@ -2,18 +2,17 @@
 <html lang="es">
 
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-  <link rel="stylesheet" href="./estilos/sass.css">
+  
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="en esta pagina veras ejercicios sencillos de crossfit y sus ejemplos">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="./estilos/sass.css">
   <meta name="keywords" content="crossfit, fitnes, ejercicios, entrenar, entrenamiento, actividad fisica">
   <title>Mundo CrossFit - Inicio</title>
 </head>
@@ -30,12 +29,17 @@
       <div class="container-fluid
       ">
         <ul class="body__header__nav__ul">
-          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a" class="navbar-brand" href="#">inicio |</a></li>
-          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a"href="./pages/historiadelcrossfit.html">historia del crossfit |</a>
+          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a" class="navbar-brand" href="#">inicio
+              |</a></li>
+          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a"
+              href="./pages/historiadelcrossfit.html">historia del crossfit |</a>
           </li>
-          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a" href="./pages/posicionesbasicas.html">posiciones basicas |</a></li>
-          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a" href="./pages/rutinasbasicas.html">rutinas basicas |</a></li>
-          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a" href="./pages/contacto.html">contacto</a></li>
+          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a"
+              href="./pages/posicionesbasicas.html">posiciones basicas |</a></li>
+          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a"
+              href="./pages/rutinasbasicas.html">rutinas basicas |</a></li>
+          <li class="body__header__nav__ul__li"><a class="body__header__nav__ul__a"
+              href="./pages/contacto.html">contacto</a></li>
         </ul>
       </div>
 
@@ -43,51 +47,37 @@
     </nav>
   </header>
   <main class="body__main">
- 
+
 
     <h1 class="body__main__h1 class animate__animated animate__bounce backInLeft"> Mundo CrossFit</h1>
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
-      <div class="carousel-indicators tamañoCarousel">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000" >
-          <img src="./assets/img/carrousel1.jpg" class="d-block w-100 " alt="imagen entrenamiento1">
-          <div class="carousel-caption d-none d-sm-block">
-            <h5 class="body__main__div__h5">en Mundo Crossfit</h5>
-            <p class="body__main__div__p">conoceras algunas tecnicas para entrenar, con algunas rutinas que te ayudaran a estar
-              en forma y entrar de manera sencilla al mundo Crossfit</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./assets/img/carrousel2.jpg" class="d-block w-100" alt="imagen entrenamiento2">
-          <div class="carousel-caption d-none d-sm-block">
-            <h5 class="body__main__div__h5">solo necesitas elementos basicos</h5>
-            <p class="body__main__div__p">sin necesidad de pagar costosos entrenamientos en gymnacios</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/carrousel3.jpg" class="d-block w-100" alt="imagen entrenamiento3">
-          <div class="carousel-caption d-none d-sm-block">
-            <h5 class="body__main__div__h5">sencillo</h5>
-            <p class="body__main__div__p"> sin complicarte, entrenar siempre ayuda al autoestima, la vida diaria, la salud
-              fisica y mental</p>
-          </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="./assets/img/carrousel1.jpg" class="card-img-top" alt="imagen entrenando1">
+        <div class="card-body">
+          <h5 class="card-title">en Mundo Crossfit</h5>
+          <p class="card-text">podras ver algunas tecnicas de entrenamiento intensivo y progresivo</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <div class="card">
+        <img src="./assets/img/carrousel2.jpg" class="card-img-top" alt="imagen entrenando2">
+        <div class="card-body">
+          <h5 class="card-title">entrenando facilmente</h5>
+          <p class="card-text">sin maquinas de gimnacios, ni costosos abonos </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/img/carrousel3.jpg" class="card-img-top" alt="imagen entrenando3">
+        <div class="card-body">
+          <h5 class="card-title">que te ayudara a...</h5>
+          <p class="card-text">Reducir el estrés, mejorar la autoestima, aliviar la ansiedad, mejorar las relaciones
+            sociales, mejorar la memoria, proteger contra el deterioro cognitivo, activar la productividad. Entre otros
+            beneficios.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
     </div>
 
   </main>
