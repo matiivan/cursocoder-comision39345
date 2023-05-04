@@ -1,16 +1,27 @@
-
 /*si es necesario agregar todas las clases del footer y anidar y usar variables*/
-.body__footer{
-    
+.body__footer {
     margin-top: 200px;
     background-color: red($color: #bf1a1a);
-    
-    
-   .body__footer__div{
-  
-        -ms-flex-align: center;}}
+    display:$flex;
+    align-items:$center;
+    flex-direction:$column;
+}
 
+
+
+.body__footer__div {
+    display:$flex;
    
+}
+
+.body__footer__div a img {
+    display:$flex;
+    align-items: right;
+    width: 27px;
+    margin: 10px;
+}
+
+
 
 
 

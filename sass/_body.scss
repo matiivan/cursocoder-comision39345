@@ -2,7 +2,8 @@ body{
  
     background-image: url(../assets/img/crossfondo.jpg);
     background-repeat: no-repeat;
-    color: rgb(127, 23, 23); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+    
+    color: rgb(109, 21, 21); text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
     font-family: 'Lobster', cursive;
     
 
@@ -11,8 +12,10 @@ body{
                     
 .body__main{
     margin-bottom: 200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;}
+    display:$flex;
+    align-items: $center;
+    flex-direction:$column;}
+
+    
 
     

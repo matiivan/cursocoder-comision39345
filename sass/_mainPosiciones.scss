@@ -1,7 +1,8 @@
 
 
 .tituloPosiciones{
-    color:rgb(7, 44, 32);
+    color: rgb(109, 21, 21); 
+    text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
     font-size: 30px;
     padding: 20px;
     font-weight: bolder;}
@@ -16,7 +17,7 @@
     margin: 10vh;
     padding: 3vh;
     text-align: center;
-    color: rgb(37, 36, 36); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
+    color: rgb(43, 86, 33); text-shadow: rgb(113, 181, 126) 0.1em 0.1em 0.2em}
     
     
     
@@ -40,7 +41,10 @@
     "DivPosiciones11 DivPosiciones12";
     grid-template-rows: 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8% 12,8%;
     grid-template-columns: 50% 50%;
-    margin: 50px;}
+    margin: 50px;
+    padding-left:10%;
+
+}
 
     
     

@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: red;
 }
 
 .body__header {
@@ -22,7 +23,7 @@
   display: fixed;
   padding: left 60px;
   text-decoration: none;
-  text-decoration-color: aliceblue;
+  text-decoration-color: rgb(21, 103, 174);
   font-size: 40px;
 }
 
@@ -42,7 +43,8 @@
 
 .body__header__nav__ul__a {
   text-decoration: none;
-  color: rgba(29, 124, 124, 0.921);
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
 @media (min-device-width: 100px) and (max-device-width: 800px) {
@@ -61,8 +63,8 @@
 .body__main__h1__2 {
   text-align: center;
   font-size: 40px;
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(48, 173, 48);
+  text-shadow: rgb(73, 110, 77) 0.1em 0.1em 0.2em;
 }
 
 .body__main__div {
@@ -73,25 +75,36 @@
 }
 
 .body__main__div__h2 {
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(48, 173, 48);
+  text-shadow: rgb(27, 89, 58) 0.1em 0.1em 0.2em;
 }
 
 /*si es necesario agregar todas las clases del footer y anidar y usar variables*/
 .body__footer {
   margin-top: 200px;
   background-color: 191;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.body__footer .body__footer__div {
-  -ms-flex-align: center;
+
+.body__footer__div {
+  display: flex;
+}
+
+.body__footer__div a img {
+  display: flex;
+  align-items: right;
+  width: 27px;
+  margin: 10px;
 }
 
 /*aca poner la media queries de las clases que intervengan en el footer */
 body {
   background-image: url(../assets/img/crossfondo.jpg);
   background-repeat: no-repeat;
-  color: rgb(127, 23, 23);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   font-family: "Lobster", cursive;
 }
 
@@ -109,11 +122,16 @@ body {
   padding: 40px;
 }
 
+.logo {
+  animation: backInRight;
+  animation-duration: 3s;
+}
+
 .body__main__h1 {
   text-align: center;
   font-size: 80px;
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   animation: backInLeft;
   animation-duration: 3s;
   margin-bottom: 350px;
@@ -145,7 +163,8 @@ body {
 }
 
 .tituloPosiciones {
-  color: rgb(7, 44, 32);
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   font-size: 30px;
   padding: 20px;
   font-weight: bolder;
@@ -160,8 +179,8 @@ body {
   margin: 10vh;
   padding: 3vh;
   text-align: center;
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(43, 86, 33);
+  text-shadow: rgb(113, 181, 126) 0.1em 0.1em 0.2em;
 }
 
 .ParrafoRutinas {
@@ -177,6 +196,7 @@ body {
   grid-template-rows: 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8% 12, 8%;
   grid-template-columns: 50% 50%;
   margin: 50px;
+  padding-left: 10%;
 }
 
 .DivPosiciones1 {
@@ -239,11 +259,12 @@ body {
   flex-wrap: nowrap;
   margin: 20px;
   padding: 40px;
+  border-style: inset;
 }
 
 .body__main__div__h2 {
-  color: rgb(37, 36, 36);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
 .body__main__div__img {
@@ -298,13 +319,15 @@ body {
 .h1Contacto {
   flex-direction: column;
   justify-content: center;
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
 .h1Rutinas {
   font-style: italic;
   text-decoration: line;
-  color: rgb(125, 35, 35);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
 .DivRutinas {
@@ -313,6 +336,7 @@ body {
   text-align: center;
   color: rgb(37, 36, 36);
   text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  border-style: inset;
 }
 
 .ParrafoRutinas {

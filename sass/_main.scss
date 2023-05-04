@@ -1,19 +1,19 @@
  .body__main__h1__2 {
-     text-align: center;
+     text-align:$center;
      font-size: 40px;
-     color: rgb(37, 36, 36);
-     text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em
+     color: rgb(48, 173, 48);
+     text-shadow: rgb(73, 110, 77) 0.1em 0.1em 0.2em
  }
 
 
  .body__main__div {
-     display: flex;
+     display: $flex;
      flex-wrap: nowrap;
      margin: 20px;
      padding: 40px;
  }
 
  .body__main__div__h2 {
-     color: rgb(37, 36, 36);
-     text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em
+     color:  rgb(48, 173, 48);
+     text-shadow: rgb(27, 89, 58) 0.1em 0.1em 0.2em
  }
