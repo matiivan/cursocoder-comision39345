@@ -1,62 +1,56 @@
 
 .body__header {
-
     display:$flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-}
+
+    .body__header__nav {
+        display: inline-block;
+    
+        .body__header__nav__ul {
+        list-style: none;
+        padding: left 60px;
+        
+        text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+        font-size: 40px;  
 
 
-.body__header__nav {
-    display: inline-block;
-}
+
+            .body__header__nav__ul__li {
+            list-style: none;
+            display: inline-block;
+            margin: 3vh;
+            height: 3vh;
+            font-size: 3vh;
+            font-weight: bold;
+            
+                .body__header__nav__ul__a {
+                text-decoration:none;
+                color: rgb(109, 21, 21);
+                text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+                .body__header__nav__ul__a:hover{
+                    color: red;
+                }
+                
+
+                }}}}}
 
 
-.body__header__nav__ul {
-    list-style: none;
-    display: fixed;
-    padding: left 60px;
-    text-decoration: none;
-    text-decoration-color: rgb(21, 103, 174);
-    font-size: 40px;
-}
 
-
-.body__header__nav__ul__li {
-    list-style: none;
-    display: inline-block;
-    margin: 3vh;
-    height: 3vh;
-    text-decoration: none;
-    font-size: 3vh;
-    font-weight: bold;
-}
-
-.body__header__nav__ul__li{
-    @include hover_mixin
-}
-
-
-.body__header__nav__ul__a {
-    text-decoration: none;
-    color: rgb(109, 21, 21); text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;;
-
-
-}
-
-@media  (min-device-width: 100px) and (max-device-width: 800px)
+@media  (min-device-width: 100px) and (max-device-width: 720px)
 {
     .body__header {
         display:$flex;
         flex-direction: $column;
         align-content:$center;
         align-items:$center;
+        .body__header__nav__ul {
+            display:$flex;
+            flex-direction:$column;
+            align-items:$center;
+        }
+    }
     }
 
 
-    .body__header__nav__ul {
-        display:$flex;
-        flex-direction:$column;
-        align-items:$center;
-    }
-}
+    

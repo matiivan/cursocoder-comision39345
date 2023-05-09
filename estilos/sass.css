@@ -13,48 +13,40 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-
-.body__header__nav {
+.body__header .body__header__nav {
   display: inline-block;
 }
-
-.body__header__nav__ul {
+.body__header .body__header__nav .body__header__nav__ul {
   list-style: none;
-  display: fixed;
   padding: left 60px;
-  text-decoration: none;
-  text-decoration-color: rgb(21, 103, 174);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   font-size: 40px;
 }
-
-.body__header__nav__ul__li {
+.body__header .body__header__nav .body__header__nav__ul .body__header__nav__ul__li {
   list-style: none;
   display: inline-block;
   margin: 3vh;
   height: 3vh;
-  text-decoration: none;
   font-size: 3vh;
   font-weight: bold;
 }
-
-.body__header__nav__ul__li :hover {
-  color: rgb(255, 8, 0);
-}
-
-.body__header__nav__ul__a {
+.body__header .body__header__nav .body__header__nav__ul .body__header__nav__ul__li .body__header__nav__ul__a {
   text-decoration: none;
   color: rgb(109, 21, 21);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
+.body__header .body__header__nav .body__header__nav__ul .body__header__nav__ul__li .body__header__nav__ul__a .body__header__nav__ul__a:hover {
+  color: red;
+}
 
-@media (min-device-width: 100px) and (max-device-width: 800px) {
+@media (min-device-width: 100px) and (max-device-width: 720px) {
   .body__header {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
   }
-  .body__header__nav__ul {
+  .body__header .body__header__nav__ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +55,7 @@
 .body__main__h1__2 {
   text-align: center;
   font-size: 40px;
-  color: rgb(48, 173, 48);
+  color: rgb(35, 165, 35);
   text-shadow: rgb(73, 110, 77) 0.1em 0.1em 0.2em;
 }
 
@@ -77,6 +69,12 @@
 .body__main__div__h2 {
   color: rgb(48, 173, 48);
   text-shadow: rgb(27, 89, 58) 0.1em 0.1em 0.2em;
+}
+
+.body__main__error404 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 /*si es necesario agregar todas las clases del footer y anidar y usar variables*/
@@ -321,6 +319,16 @@ body {
   justify-content: center;
   color: rgb(109, 21, 21);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+}
+
+.a__enviar__hijo {
+  text-decoration: none;
+  color: red;
 }
 
 .h1Rutinas {
