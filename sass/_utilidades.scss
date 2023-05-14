@@ -5,3 +5,12 @@
 .ancho{
     width: 100%;
 }
+
+h1{
+   color: rgb(120, 30, 30);
+   text-shadow: rgb(92, 174, 124) 0.1em 0.1em 0.2em;;
+}
+
+h2{
+    @extend h1;
+}

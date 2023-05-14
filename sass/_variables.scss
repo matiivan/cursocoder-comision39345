@@ -15,6 +15,7 @@ $space-evenly:space-evenly;
 $primary-color: pink;
 $text-align: center;
 $fuente-principal: 'Roboto', sans-serif;
+$wrap:wrap;
 
 
 
@@ -45,7 +46,7 @@ $map-flex:(
     space-around: space-around,
     space-between: space-between,
     space-evenly: space-evenly,
-    space-center: center,
+    align-items: center,
     align-items-stretch: stretch
 );
 

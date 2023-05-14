@@ -22,6 +22,7 @@
     
     
     .ParrafoRutinas{
+        
     
         text-align: center;
         color: rgb(145, 13, 13); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
@@ -75,9 +76,9 @@
     grid-area:DivPosiciones12;}
 
 
-    @media (min-width:280px) and (max-width:800px) {
+    @media (min-width:280px) and (max-width:720px) {
         .PosicionesDiv{
-        display: flex;
+        display: $flex;
         flex-wrap: wrap;
         margin:0px;
         

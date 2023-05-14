@@ -1,4 +1,4 @@
-/*si es necesario agregar todas las clases del footer y anidar y usar variables*/
+
 .body__footer {
     line-height: 10px;
     margin-top: 200px;
@@ -6,27 +6,32 @@
     display:$flex;
     align-items:$center;
     flex-direction:$column;
-}
+
+    .body__footer__div {
+        display:flex;
 
 
+            }
+        }
 
-.body__footer__div {
-    display:$flex;
-   
-}
-
-.body__footer__div a img {
-    display:$flex;
-    align-items: right;
-    width: 27px;
-    margin: 10px;
-}
-
-
-
-
+        
+        .body__footer__div a img {
+            display:$flex;
+            align-items: right;
+            width: 27px;
+            margin: 10px;
+        }
 
 
 
 
-/*aca poner la media queries de las clases que intervengan en el footer */
+
+
+
+
+
+
+
+
+
+

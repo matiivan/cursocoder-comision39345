@@ -1,4 +1,9 @@
-@mixin hover_mixin{
-    :hover{
-    color: rgb(255, 8, 0)
-}}
+
+
+@mixin flexbox ($margen,$alineacion,$direccion){
+    display:flex;
+    margin-bottom:200px;
+    align-items: $alineacion;
+    flex-direction:$direccion;
+
+}

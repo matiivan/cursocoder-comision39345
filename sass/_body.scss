@@ -5,16 +5,20 @@ body{
     
     color: rgb(109, 21, 21); text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
     font-family: 'Lobster', cursive;
+
+    .body__main{
+       
+         @include flexbox (200px,center,map-get($map-flex,column))
     
 
 }
 
                     
-.body__main{
-    margin-bottom: 200px;
-    display:$flex;
-    align-items: $center;
-    flex-direction:$column;}
+
+
+
+
+}
 
     
 
