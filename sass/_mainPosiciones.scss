@@ -1,7 +1,7 @@
 
 
 .tituloPosiciones{
-    color: rgb(109, 21, 21); 
+    color: rgb(253, 252, 252); 
     text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
     font-size: 30px;
     padding: 20px;
@@ -17,7 +17,8 @@
     margin: 10vh;
     padding: 3vh;
     text-align: center;
-    color: rgb(43, 86, 33); text-shadow: rgb(113, 181, 126) 0.1em 0.1em 0.2em}
+    color: rgb(234, 240, 233); 
+    text-shadow: rgb(113, 181, 126) 0.1em 0.1em 0.2em}
     
     
     
@@ -25,7 +26,8 @@
         
     
         text-align: center;
-        color: rgb(145, 13, 13); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
+        color: rgb(249, 249, 249);
+         text-shadow: rgb(203, 119, 119) 0.1em 0.1em 0.2em}
 
 
         
@@ -79,7 +81,7 @@
     @media (min-width:280px) and (max-width:720px) {
         .PosicionesDiv{
         display: $flex;
-        flex-wrap: wrap;
+        flex-wrap: $wrap;
         margin:0px;
         
         

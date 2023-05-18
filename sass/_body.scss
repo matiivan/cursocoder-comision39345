@@ -1,10 +1,21 @@
 body{
  
-    background-image: url(../assets/img/crossfondo.jpg);
-    background-repeat: no-repeat;
+    background-image:url(../assets/img/crossfondoultimo.jpg);
+    background-repeat: repeat;
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
+   
+    color: rgb(243, 237, 237); 
+    text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+    font-family: 'eurostileregular',sans-serif;
+
     
-    color: rgb(109, 21, 21); text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
-    font-family: 'Lobster', cursive;
+    .logo{
+        animation:backInRight;
+        animation-duration: 3s;
+    
+      }
+    
 
     .body__main{
        
@@ -12,13 +23,13 @@ body{
     
 
 }
-
+    }
                     
 
 
 
 
-}
+
 
     
 

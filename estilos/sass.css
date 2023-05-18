@@ -1,11 +1,10 @@
-@charset "UTF-8";
 /*maps*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: red;
+  color: rgb(247, 243, 243);
 }
 
 .color {
@@ -17,8 +16,15 @@
 }
 
 h1, h2 {
-  color: rgb(120, 30, 30);
+  color: rgb(245, 236, 236);
   text-shadow: rgb(92, 174, 124) 0.1em 0.1em 0.2em;
+}
+
+p {
+  color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .body__header {
@@ -30,6 +36,7 @@ h1, h2 {
   display: inline-block;
 }
 .body__header .body__header__nav .body__header__nav__ul {
+  text-decoration: none;
   list-style: none;
   padding: left 60px;
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
@@ -41,15 +48,17 @@ h1, h2 {
   margin: 3vh;
   height: 3vh;
   font-size: 3vh;
-  font-weight: bold;
 }
 .body__header .body__header__nav .body__header__nav__ul .body__header__nav__ul__li .body__header__nav__ul__a {
   text-decoration: none;
-  color: rgb(109, 21, 21);
+  color: rgb(243, 237, 237);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
-.body__header__nav__ul__a .body__header .body__header__nav .body__header__nav__ul .body__header__nav__ul__li .body__header__nav__ul__ahover {
-  color: red;
+.body__header .body__header__nav .body__header__nav__ul .body__header__nav__ul__li .body__header__nav__ul__a:hover {
+  color: rgb(0, 0, 0);
+  background-color: azure;
+  text-shadow: rgb(246, 247, 246) 0.1em 0.1em 0.2em;
+  border-radius: 8%;
 }
 
 @media (min-device-width: 100px) and (max-device-width: 720px) {
@@ -68,7 +77,7 @@ h1, h2 {
 .body__main__h1__2 {
   text-align: center;
   font-size: 40px;
-  color: rgb(35, 165, 35);
+  color: rgb(240, 244, 240);
   text-shadow: rgb(73, 110, 77) 0.1em 0.1em 0.2em;
 }
 .body__main__h1__2 .body__main__div {
@@ -78,7 +87,7 @@ h1, h2 {
   padding: 40px;
 }
 
-.body__main__div__h2 {
+.body__main__div__h2, .body__main__div .body__main__div__h2--var {
   color: rgb(48, 173, 48);
   text-shadow: rgb(27, 89, 58) 0.1em 0.1em 0.2em;
 }
@@ -92,12 +101,12 @@ h1, h2 {
 .body__footer {
   line-height: 10px;
   margin-top: 200px;
-  background-color: 191;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.body__footer .body__footer__div {
+
+.body__footer__div {
   display: flex;
 }
 
@@ -106,14 +115,22 @@ h1, h2 {
   align-items: right;
   width: 27px;
   margin: 10px;
+  color: rgb(109, 21, 21);
+  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
 body {
-  background-image: url(../assets/img/crossfondo.jpg);
-  background-repeat: no-repeat;
-  color: rgb(109, 21, 21);
+  background-image: url(../assets/img/crossfondoultimo.jpg);
+  background-repeat: repeat;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+  color: rgb(243, 237, 237);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
-  font-family: "Lobster", cursive;
+  font-family: "eurostileregular", sans-serif;
+}
+body .logo {
+  animation: backInRight;
+  animation-duration: 3s;
 }
 body .body__main {
   display: flex;
@@ -129,48 +146,98 @@ body .body__main {
   padding: 40px;
 }
 
-.logo {
-  animation: backInRight;
-  animation-duration: 3s;
-}
-
 .body__main__h1 {
   text-align: center;
   font-size: 80px;
-  color: rgb(109, 21, 21);
-  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+  color: rgb(239, 233, 233);
+  text-shadow: rgb(192, 133, 114) 0.1em 0.1em 0.2em;
   animation: backInLeft;
   animation-duration: 3s;
-  margin-bottom: 350px;
+  margin-bottom: 100px;
+}
+
+.H3 {
+  font-size: 60px;
+  color: #e9e1e1;
+  margin: 40px;
+}
+
+.body__main__h1__h2__div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px;
+  background-image: url(../assets/img/queescrossfit.jpg);
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  line-height: 1.7em;
+  text-size-adjust: 40px;
+  font-size: 6vh;
+  padding-left: 20px;
+}
+
+@media (min-device-width: 180px) and (max-device-width: 700px) {
+  .body__main__h1__h2__div {
+    font-size: 3vh;
+  }
+}
+.body__main__h1__h2 {
+  position: relative;
+  z-index: 3;
+  width: 80%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin: 20px;
+  color: aliceblue;
+}
+
+.card {
+  background-color: black;
 }
 
 .body__main__div__h5 {
-  color: #6a1919;
+  color: #e9e1e1;
   background-color: beige;
   font-size: 20px;
 }
 
 .body__main__div__p {
-  color: rgb(22, 68, 108);
+  color: rgb(227, 235, 242);
   font-size: 40px;
   background-color: beige;
 }
 
-.tamañoCarousel {
-  margin-top: 100px;
-  width: 70%;
-  height: 100px;
-  opacity: 1;
-}
-
 .body__main__div__p {
-  color: rgb(22, 68, 108);
+  color: rgb(236, 238, 239);
   font-size: 40px;
   background-color: rgba(249, 249, 248, 0.879);
 }
 
+.Div__glosario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid rgb(242, 239, 239);
+  color: aliceblue;
+  width: 75%;
+  font-size: 25px;
+  align-items: flex-start;
+  align-content: center;
+}
+
 .tituloPosiciones {
-  color: rgb(109, 21, 21);
+  color: rgb(253, 252, 252);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   font-size: 30px;
   padding: 20px;
@@ -186,14 +253,14 @@ body .body__main {
   margin: 10vh;
   padding: 3vh;
   text-align: center;
-  color: rgb(43, 86, 33);
+  color: rgb(234, 240, 233);
   text-shadow: rgb(113, 181, 126) 0.1em 0.1em 0.2em;
 }
 
 .ParrafoRutinas {
   text-align: center;
-  color: rgb(145, 13, 13);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(249, 249, 249);
+  text-shadow: rgb(203, 119, 119) 0.1em 0.1em 0.2em;
 }
 
 .PosicionesDiv {
@@ -268,13 +335,23 @@ body .body__main {
   padding: 40px;
   border-style: inset;
 }
-.body__main__div .body__main__div__h2 {
-  color: rgb(109, 21, 21);
-  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+.body__main__div .body__main__div__h2, .body__main__div .body__main__div__h2--var {
+  color: rgb(252, 247, 247);
+  text-shadow: rgb(71, 180, 113) 0.1em 0.1em 0.2em;
+}
+.body__main__div .body__main__div__h2--var {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .body__main__div .body__main__div__img {
   width: 300px;
   height: 300px;
+  background-image: url(../assets/img/greg-glassman-creador-crossfit.jpg);
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: soft-light;
+}
+.body__main__div .p__historia {
+  font-size: 25px;
 }
 
 @media (min-device-width: 180px) and (max-device-width: 700px) {
@@ -330,8 +407,14 @@ body .body__main {
 }
 
 .form {
+  background-image: url(../assets/img/contacto.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
   display: flex;
-  border: 3px solid red;
+  border: 1px solid rgb(100, 100, 100);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   flex-direction: column;
   align-items: center;
@@ -339,8 +422,13 @@ body .body__main {
 
 .nombre {
   font-size: 30px;
-  color: rgb(104, 49, 33);
+  color: rgb(240, 238, 237);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+}
+
+.Div__nombre {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .enviar {
@@ -358,25 +446,76 @@ body .body__main {
 .h1Rutinas {
   font-style: italic;
   text-decoration: line;
-  color: rgb(109, 21, 21);
+  color: rgb(245, 243, 243);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+  margin-bottom: 20vh;
+}
+
+.correr {
+  background-image: url(../assets/img/correr.jpg);
+  padding: 20px;
+  background-repeat: repeat-x;
+  background-size: auto;
+  align-content: normal;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+}
+
+.flexiones {
+  background-image: url(../assets/img/flexiones.jpg);
+  padding: 20px;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+  background-repeat: repeat-x;
+  background-size: auto;
+}
+
+.sentadillas {
+  background-image: url(../assets/img/sentadillas.jpg);
+  padding: 20px;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+}
+
+.dominadas {
+  background-image: url(../assets/img/dominadas.jpg);
+  padding: 20px;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+}
+
+.abdominales {
+  background-image: url(../assets/img/abdominales.jpg);
+  padding: 20px;
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+}
+
+.buerpee {
+  background-image: url(../assets/img/burpee.jpg);
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-size: auto;
+  align-content: center;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
 }
 
 .DivRutinas {
   margin: 10vh;
   padding: 3vh;
   text-align: center;
-  color: rgb(37, 36, 36);
+  color: rgb(252, 246, 246);
   text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
-  border-style: inset;
-  background-color: grey;
-  border-radius: 60%;
 }
 
 .ParrafoRutinas {
   text-align: center;
-  color: rgb(145, 13, 13);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  color: rgb(211, 198, 198);
+  text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em;
 }
 
 /* inciar sass sass --watch sass:estilos*/

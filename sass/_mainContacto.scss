@@ -43,18 +43,28 @@ color:rgb(109, 21, 21);
  text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;}
 
 .form{
+background-image: url(../assets/img/contacto.jpg);
+background-position:cover;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgb(50, 50,50);
+background-blend-mode: soft-light;
 display: flex;
-border: 3px solid red;
+border: 1px solid rgb(100, 100, 100);
 text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 flex-direction: column;
 align-items: center;}
 
 .nombre{
     font-size: 30px;
-    color: rgb(104, 49, 33);
+    color: rgb(240, 238, 237);
     text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
+.Div__nombre{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .enviar{
     display: flex;
     justify-content: center;

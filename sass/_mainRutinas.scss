@@ -1,9 +1,69 @@
 .h1Rutinas{
     font-style:italic;
     text-decoration:line;
-    color: rgb(109, 21, 21); 
-    text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;}
+    color: rgb(245, 243, 243); 
+    text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+    margin-bottom: 20vh;}
+
+.correr{
+    background-image: url(../assets/img/correr.jpg);
+    padding: 20px;
+    background-repeat:repeat-x;
+    background-size:auto;
+    align-content:normal;
+
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
+    }
+
+.flexiones{
+    background-image: url(../assets/img/flexiones.jpg);
+    padding: 20px;
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
+    background-repeat:repeat-x;
+    background-size:auto;
+
+}
+
+.sentadillas{
+    background-image: url(../assets/img/sentadillas.jpg);
+    padding: 20px;
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
+}
+
+.dominadas{
+    background-image: url(../assets/img/dominadas.jpg);
+    padding: 20px;
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
     
+}
+    
+.abdominales{
+    background-image: url(../assets/img/abdominales.jpg);
+    padding: 20px;
+    background-repeat:repeat-x;
+    background-size:auto;
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
+
+}
+
+.buerpee{
+    background-image: url(../assets/img/burpee.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-repeat:repeat-x;
+    background-size:auto;
+    align-content:  center;
+    
+    
+    background-color: rgb(50, 50,50);
+    background-blend-mode: soft-light;
+
+}
 
 
 .DivRutinas{
@@ -11,15 +71,15 @@
     margin: 10vh;
     padding: 3vh;
     text-align: center;
-    color: rgb(37, 36, 36); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
-    border-style: inset;
-    background-color: grey;
-    border-radius: 60%;}
+    color: rgb(252, 246, 246); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+   
+    
+    }
     
     
     
 .ParrafoRutinas{
     
         text-align: center;
-        color: rgb(145, 13, 13); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em}
+        color: rgb(211, 198, 198); text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em}
     

@@ -8,33 +8,43 @@
         display: inline-block;
     
         .body__header__nav__ul {
+        text-decoration: none;
         list-style: none;
         padding: left 60px;
-        
         text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
         font-size: 40px;  
 
 
 
             .body__header__nav__ul__li {
+            
             list-style: none;
             display: inline-block;
             margin: 3vh;
             height: 3vh;
             font-size: 3vh;
-            font-weight: bold;
+            ;
             
                 .body__header__nav__ul__a {
                 text-decoration:none;
-                color: rgb(109, 21, 21);
+                color: rgb(243, 237, 237);
                 text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
-                .body__header__nav__ul__a &hover{
-                    color: red;
-                }
+                
+                
                 
 
-                }}}}}
+                }
 
+                .body__header__nav__ul__a:hover{
+                color: rgb(0, 0, 0);
+                background-color: azure;
+                text-shadow: rgb(246, 247, 246) 0.1em 0.1em 0.2em;
+                border-radius: 8%;
+            
+            }
+            }}}}
+
+             
 
 
 @media  (min-device-width: 100px) and (max-device-width: 720px)

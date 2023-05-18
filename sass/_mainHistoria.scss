@@ -7,16 +7,29 @@
     border-style: inset;
 
     .body__main__div__h2{
-        color: rgb(109, 21, 21); 
-        text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+        color: rgb(252, 247, 247); 
+        text-shadow: rgb(71, 180, 113) 0.1em 0.1em 0.2em;
+    }
+
+    .body__main__div__h2--var{
+        @extend .body__main__div__h2;
+        display: flex;
+        flex-direction:row-reverse;
     }
        
 .body__main__div__img{
     width: 300px;
-    height: 300px;       
+    height: 300px;
+    background-image: url(../assets/img/greg-glassman-creador-crossfit.jpg); 
+    background-color: rgb(100, 100,100);
+    background-blend-mode: soft-light;
+
 }
 
+.p__historia{
+font-size: 25px;
 
+}
     
 
 
@@ -35,4 +48,5 @@
      
     }}    
 
+   
             

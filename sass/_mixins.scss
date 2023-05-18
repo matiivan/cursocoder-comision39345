@@ -7,3 +7,11 @@
     flex-direction:$direccion;
 
 }
+
+
+@mixin footer ($height,$margin,$display,$aling,$direction){
+line-height:$height;
+margin-top:$margin;
+display:$display;
+align-items:$aling;
+flex-direction:$direction;}
