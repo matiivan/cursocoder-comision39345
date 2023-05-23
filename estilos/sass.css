@@ -128,11 +128,12 @@ body {
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   font-family: "eurostileregular", sans-serif;
 }
-body .logo {
+body .body__header .body__header__div .logo {
   animation: backInRight;
   animation-duration: 3s;
 }
-body .body__main {
+
+.body__main {
   display: flex;
   margin-bottom: 200px;
   align-items: center;

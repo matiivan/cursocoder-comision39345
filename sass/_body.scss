@@ -9,28 +9,23 @@ body{
     text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
     font-family: 'eurostileregular',sans-serif;
 
+    .body__header{
+
+      
+
+      .body__header__div{ 
+
+
     
-    .logo{
+        .logo{
         animation:backInRight;
         animation-duration: 3s;
     
-      }
-    
+      
+               
 
-    .body__main{
+      }}}}
+
+      .body__main{
        
-         @include flexbox (200px,center,map-get($map-flex,column))
-    
-
-}
-    }
-                    
-
-
-
-
-
-
-    
-
-    
+        @include flexbox (200px,center,map-get($map-flex,column));}
