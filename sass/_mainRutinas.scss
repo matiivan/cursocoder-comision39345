@@ -7,10 +7,11 @@
 
 .correr{
     background-image: url(../assets/img/correr.jpg);
-    padding: 20px;
+    padding: 45px;
     background-repeat:repeat-x;
-    background-size:auto;
+    background-size:cover;
     align-content:normal;
+    
 
     background-color: rgb(50, 50,50);
     background-blend-mode: soft-light;
@@ -18,24 +19,23 @@
 
 .flexiones{
     background-image: url(../assets/img/flexiones.jpg);
-    padding: 20px;
+    padding: 45px;
     background-color: rgb(50, 50,50);
     background-blend-mode: soft-light;
-    background-repeat:repeat-x;
-    background-size:auto;
+    background-size:cover;
 
 }
 
 .sentadillas{
     background-image: url(../assets/img/sentadillas.jpg);
-    padding: 20px;
+    padding: 45px;
     background-color: rgb(50, 50,50);
     background-blend-mode: soft-light;
 }
 
 .dominadas{
     background-image: url(../assets/img/dominadas.jpg);
-    padding: 20px;
+    padding: 45px;
     background-color: rgb(50, 50,50);
     background-blend-mode: soft-light;
     
@@ -43,9 +43,9 @@
     
 .abdominales{
     background-image: url(../assets/img/abdominales.jpg);
-    padding: 20px;
-    background-repeat:repeat-x;
+    padding: 50px; 
     background-size:auto;
+    background-position-x:center;
     background-color: rgb(50, 50,50);
     background-blend-mode: soft-light;
 
@@ -53,10 +53,10 @@
 
 .buerpee{
     background-image: url(../assets/img/burpee.jpg);
-    padding: 20px;
+    padding: 45px;
     background-repeat: no-repeat;
     background-repeat:repeat-x;
-    background-size:auto;
+    background-size:cover;
     align-content:  center;
     
     

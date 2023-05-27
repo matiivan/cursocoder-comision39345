@@ -87,7 +87,7 @@ p {
   padding: 40px;
 }
 
-.body__main__div__h2, .body__main__div .body__main__div__h2--var {
+.body__main__div__h2 {
   color: rgb(48, 173, 48);
   text-shadow: rgb(27, 89, 58) 0.1em 0.1em 0.2em;
 }
@@ -122,6 +122,7 @@ p {
 body {
   background-image: url(../assets/img/crossfondoultimo.jpg);
   background-repeat: repeat;
+  background-size: auto;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
   color: rgb(243, 237, 237);
@@ -237,6 +238,13 @@ body .body__header .body__header__div .logo {
   align-content: center;
 }
 
+h4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .tituloPosiciones {
   color: rgb(253, 252, 252);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
@@ -332,17 +340,14 @@ body .body__header .body__header__div .logo {
 .body__main__div {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   margin: 20px;
   padding: 40px;
   border-style: inset;
 }
-.body__main__div .body__main__div__h2, .body__main__div .body__main__div__h2--var {
+.body__main__div .body__main__div__h2 {
   color: rgb(252, 247, 247);
   text-shadow: rgb(71, 180, 113) 0.1em 0.1em 0.2em;
-}
-.body__main__div .body__main__div__h2--var {
-  display: flex;
-  flex-direction: row-reverse;
 }
 .body__main__div .body__main__div__img {
   width: 300px;
@@ -364,6 +369,32 @@ body .body__header .body__header__div .logo {
     flex-wrap: wrap;
   }
 }
+.body__main__div2 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 20px;
+  padding: 40px;
+  border-style: inset;
+  flex-direction: row-reverse;
+}
+.body__main__div2 .body__main__div__img2 {
+  margin: 20px;
+  padding: 40px;
+}
+.body__main__div2 .body__main__div__img2 .body__main__div__img {
+  width: 300px;
+  height: 300px;
+  background-image: url(../assets/img/greg-glassman-creador-crossfit.jpg);
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: soft-light;
+}
+
+.body__main__div__h2--var {
+  color: rgb(255, 252, 252);
+  text-shadow: rgb(66, 26, 211) 0.1em 0.1em 0.2em;
+}
+
 .CotainerContacto {
   position: relative;
   display: flex;
@@ -444,6 +475,48 @@ body .body__header .body__header__div .logo {
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
 }
 
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+a[type=text],
+a[type=email],
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+a[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a[type=submit]:hover {
+  background-color: #45a049;
+}
+
 .h1Rutinas {
   font-style: italic;
   text-decoration: line;
@@ -454,9 +527,9 @@ body .body__header .body__header__div .logo {
 
 .correr {
   background-image: url(../assets/img/correr.jpg);
-  padding: 20px;
+  padding: 45px;
   background-repeat: repeat-x;
-  background-size: auto;
+  background-size: cover;
   align-content: normal;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
@@ -464,42 +537,41 @@ body .body__header .body__header__div .logo {
 
 .flexiones {
   background-image: url(../assets/img/flexiones.jpg);
-  padding: 20px;
+  padding: 45px;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
-  background-repeat: repeat-x;
-  background-size: auto;
+  background-size: cover;
 }
 
 .sentadillas {
   background-image: url(../assets/img/sentadillas.jpg);
-  padding: 20px;
+  padding: 45px;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
 
 .dominadas {
   background-image: url(../assets/img/dominadas.jpg);
-  padding: 20px;
+  padding: 45px;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
 
 .abdominales {
   background-image: url(../assets/img/abdominales.jpg);
-  padding: 20px;
-  background-repeat: repeat-x;
+  padding: 50px;
   background-size: auto;
+  background-position-x: center;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
 
 .buerpee {
   background-image: url(../assets/img/burpee.jpg);
-  padding: 20px;
+  padding: 45px;
   background-repeat: no-repeat;
   background-repeat: repeat-x;
-  background-size: auto;
+  background-size: cover;
   align-content: center;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
