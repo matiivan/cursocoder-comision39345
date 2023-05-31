@@ -46,6 +46,7 @@ font-size: 25px;
         .body__main__div{
             display: flex;
             flex-wrap: wrap;
+         
         
             }
      
@@ -61,6 +62,7 @@ font-size: 25px;
     padding: 40px;
     border-style: inset;
     flex-direction: row-reverse;
+    
 
 
     .body__main__div__img2{
@@ -84,3 +86,7 @@ font-size: 25px;
     text-shadow: rgb(66, 26, 211) 0.1em 0.1em 0.2em;
 }
             
+
+.p__historia{
+    font-size: 30px;
+}

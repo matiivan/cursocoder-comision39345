@@ -245,6 +245,15 @@ h4 {
   justify-content: center;
 }
 
+.button-menu {
+  color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: 30px;
+  justify-content: center;
+  gap: 3px;
+}
+
 .body__main__div {
   display: flex;
   flex-wrap: nowrap;
@@ -301,6 +310,10 @@ h4 {
 .body__main__div__h2--var {
   color: rgb(255, 252, 252);
   text-shadow: rgb(66, 26, 211) 0.1em 0.1em 0.2em;
+}
+
+.p__historia {
+  font-size: 30px;
 }
 
 .container {
