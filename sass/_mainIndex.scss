@@ -1,30 +1,16 @@
-    
+body{
+ .body__main{
 
- .body__main__div{
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 20px;
-  padding: 40px;}
-
-  
-.body__main__h1{
+  .body__main__h1{
   text-align: center;
   font-size: 80px;
   color: rgb(239, 233, 233); text-shadow: rgb(192, 133, 114) 0.1em 0.1em 0.2em;
   animation:backInLeft;
   animation-duration: 3s;
-  margin-bottom: 100px;}
-
-
-  .H3{
-    font-size: 60px;
-    color: #e9e1e1;
-    margin: 40px;
+  margin-bottom: 100px;
+ 
   }
-
   .body__main__h1__h2__div{
-
-   
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -44,81 +30,193 @@
     text-size-adjust: 40px;
     font-size: 6vh;
     padding-left: 20px;
+ 
+    .body__main__h1__h2{
+      position: relative;
+      z-index: 3;
+      width: 80%;
+      max-width: 1080px;
+      margin-right: auto;
+      margin:20px;
+      color: aliceblue;
+ 
+  }}}
+.div__card{
+  .card{
+    background-color:black;
+   
+    
+}}
+
+.Div__glosario{
+
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid rgb(242, 239, 239);
+  color: aliceblue;
+  width: 75%;
+  font-size: 25px;
+  align-items: flex-start;
+  align-content: center;
+  display: flex;
+ align-items: center;
+ flex-direction: column;
+   
+    }
+    
+    .H3{
+      font-size: 60px;
+      color: #e9e1e1;
+      margin: 40px;
+
+
+
+      }
+      .H3__div{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+    
+}
+
+}
+@media(min-device-width:180px) and (max-device-width:700px)
+{.body__main__h1__h2__div{
+  font-size: 3vh;
+
+
+}}
+
+
+
+
+//  .body__main__div{
+//   display: flex;
+//   flex-wrap: nowrap;
+//   margin: 20px;
+//   padding: 40px;}
+
+  
+// .body__main__h1{
+//   text-align: center;
+//   font-size: 80px;
+//   color: rgb(239, 233, 233); text-shadow: rgb(192, 133, 114) 0.1em 0.1em 0.2em;
+//   animation:backInLeft;
+//   animation-duration: 3s;
+//   margin-bottom: 100px;}
+
+
+//   .H3{
+//     font-size: 60px;
+//     color: #e9e1e1;
+//     margin: 40px;
+
+
+    
+//   }
+
+//   .body__main__h1__h2__div{
+
+   
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     margin: 40px;
+//     background-image:url(../assets/img/queescrossfit.jpg);
+//     background-color: rgb(50, 50,50);
+//     background-blend-mode: soft-light;
+//     overflow: hidden;
+//     position: relative;
+//     width: 100%;
+//     height: 80vh;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-size: cover;
+//     line-height: 1.7em;
+//     text-size-adjust: 40px;
+//     font-size: 6vh;
+//     padding-left: 20px;
     
 
-  }
-  @media(min-device-width:180px) and (max-device-width:700px)
-  {.body__main__h1__h2__div{
-    font-size: 3vh;
+//   }
+//   @media(min-device-width:180px) and (max-device-width:700px)
+//   {.body__main__h1__h2__div{
+//     font-size: 3vh;
 
 
-  }}
+//   }}
 
 
 
-  .body__main__h1__h2{
-    position: relative;
-    z-index: 3;
-    width: 80%;
-    max-width: 1080px;
-    margin-right: auto;
-    margin:20px;
-    color: aliceblue;
+//   .body__main__h1__h2{
+//     position: relative;
+//     z-index: 3;
+//     width: 80%;
+//     max-width: 1080px;
+//     margin-right: auto;
+//     margin:20px;
+//     color: aliceblue;
 
-  }
+//   }
 
 
  
 
-  .card{
-    background-color:black;
-  }
+//   .card{
+//     background-color:black;
+//   }
 
 
     
-.body__main__div__h5{
-  color: #e9e1e1;
-  background-color: beige;
-  font-size: 20px;}
+// .body__main__div__h5{
+//   color: #e9e1e1;
+//   background-color: beige;
+//   font-size: 20px;}
 
-.body__main__div__p{
-      color: rgb(227, 235, 242);
-      font-size: 40px;
-      background-color: beige;}
+// .body__main__div__p{
+//       color: rgb(227, 235, 242);
+//       font-size: 40px;
+//       background-color: beige;}
 
   
   
-.body__main__div__p{
-  color: rgb(236, 238, 239);
-  font-size: 40px;
-  background-color: rgba(249, 249, 248, 0.879);
-}
+// .body__main__div__p{
+//   color: rgb(236, 238, 239);
+//   font-size: 40px;
+//   background-color: rgba(249, 249, 248, 0.879);
+// }
 
 
-.Div__glosario{
+// .Div__glosario{
 
-display: flex;
-flex-wrap:wrap;
-align-items: center;
-align-content: center;
-margin: 20px;
-padding: 30px;
-border: 1px solid rgb(242, 239, 239);
-color: aliceblue;
-width: 75%;
-font-size: 25px;
-align-items: flex-start;
-align-content: center;
+// display: flex;
+// flex-wrap:wrap;
+// align-items: center;
+// align-content: center;
+// margin: 20px;
+// padding: 30px;
+// border: 1px solid rgb(242, 239, 239);
+// color: aliceblue;
+// width: 75%;
+// font-size: 25px;
+// align-items: flex-start;
+// align-content: center;
 
-}
+// }
 
 
-h4{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+// h4{
+ 
+// }
 
 
   

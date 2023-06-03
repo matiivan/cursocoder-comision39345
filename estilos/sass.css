@@ -25,7 +25,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  background-size: 30px;
+  background-size: 40px;
 }
 
 .body__header {
@@ -106,9 +106,12 @@ p {
   align-items: center;
   flex-direction: column;
 }
-
-.body__footer__div {
+.body__footer .body__footer__p {
+  font-size: 20px;
+}
+.body__footer .body__footer__div {
   display: flex;
+  align-items: center;
 }
 
 .body__footer__div a img {
@@ -141,14 +144,7 @@ body .body__header .body__header__div .logo {
   flex-direction: column;
 }
 
-.body__main__div {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 20px;
-  padding: 40px;
-}
-
-.body__main__h1 {
+body .body__main .body__main__h1 {
   text-align: center;
   font-size: 80px;
   color: rgb(239, 233, 233);
@@ -157,14 +153,7 @@ body .body__header .body__header__div .logo {
   animation-duration: 3s;
   margin-bottom: 100px;
 }
-
-.H3 {
-  font-size: 60px;
-  color: #e9e1e1;
-  margin: 40px;
-}
-
-.body__main__h1__h2__div {
+body .body__main .body__main__h1__h2__div {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -185,13 +174,7 @@ body .body__header .body__header__div .logo {
   font-size: 6vh;
   padding-left: 20px;
 }
-
-@media (min-device-width: 180px) and (max-device-width: 700px) {
-  .body__main__h1__h2__div {
-    font-size: 3vh;
-  }
-}
-.body__main__h1__h2 {
+body .body__main .body__main__h1__h2__div .body__main__h1__h2 {
   position: relative;
   z-index: 3;
   width: 80%;
@@ -200,34 +183,15 @@ body .body__header .body__header__div .logo {
   margin: 20px;
   color: aliceblue;
 }
-
-.card {
+body .div__card .card {
   background-color: black;
 }
-
-.body__main__div__h5 {
-  color: #e9e1e1;
-  background-color: beige;
-  font-size: 20px;
-}
-
-.body__main__div__p {
-  color: rgb(227, 235, 242);
-  font-size: 40px;
-  background-color: beige;
-}
-
-.body__main__div__p {
-  color: rgb(236, 238, 239);
-  font-size: 40px;
-  background-color: rgba(249, 249, 248, 0.879);
-}
-
-.Div__glosario {
+body .Div__glosario {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  justify-content: center;
   margin: 20px;
   padding: 30px;
   border: 1px solid rgb(242, 239, 239);
@@ -236,22 +200,44 @@ body .body__header .body__header__div .logo {
   font-size: 25px;
   align-items: flex-start;
   align-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-h4 {
+body .H3 {
+  font-size: 60px;
+  color: #e9e1e1;
+  margin: 40px;
+}
+body .H3__div {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+@media (min-device-width: 180px) and (max-device-width: 700px) {
+  .body__main__h1__h2__div {
+    font-size: 3vh;
+  }
+}
 .button-menu {
-  color: antiquewhite;
+  color: rgb(252, 251, 249);
   display: flex;
   flex-wrap: wrap;
   background-size: 30px;
   justify-content: center;
   gap: 3px;
+}
+
+.card2 {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.card2 .tituloPosiciones {
+  background-color: black;
+  font-size: 45px;
 }
 
 .body__main__div {
@@ -305,6 +291,7 @@ h4 {
   background-image: url(../assets/img/greg-glassman-creador-crossfit.jpg);
   background-color: rgb(100, 100, 100);
   background-blend-mode: soft-light;
+  object-fit: cover;
 }
 
 .body__main__div__h2--var {
@@ -320,31 +307,27 @@ h4 {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 150px;
 }
-
-h1, h2 {
+.container .Contacto__h1 {
   color: #f6f2f2;
   text-align: center;
 }
-
-form {
+.container form {
   margin-top: 20px;
 }
-
-label {
+.container form label {
   display: block;
   margin-bottom: 5px;
 }
-
-input, textarea {
+.container form input, .container form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 4px;
   margin-bottom: 10px;
 }
-
-button {
+.container form button {
   width: 100%;
   background-color: #36f45c;
   color: white;
@@ -353,63 +336,86 @@ button {
   cursor: pointer;
   font-size: 16px;
 }
+.container form button:hover {
+  background-color: #d32f2f;
+}
 
 button:hover {
   background-color: #d32f2f;
 }
 
-.h1Rutinas {
+.body__main .h1Rutinas {
   font-style: italic;
   text-decoration: line;
   color: rgb(245, 243, 243);
   text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
   margin-bottom: 20vh;
+  font-size: 55px;
 }
-
-.correr {
+.body__main .correr {
   background-image: url(../assets/img/correr.jpg);
-  padding: 45px;
-  background-repeat: repeat-x;
-  background-size: cover;
+  padding: 70px;
+  background-size: center;
   align-content: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
-
-.flexiones {
+.body__main .DivRutinas {
+  margin: 10vh;
+  padding: 3vh;
+  text-align: center;
+  color: rgb(252, 246, 246);
+  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.body__main .ParrafoRutinas {
+  text-align: center;
+  color: rgb(211, 198, 198);
+  text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em;
+  font-size: 40px;
+}
+.body__main .flexiones {
   background-image: url(../assets/img/flexiones.jpg);
-  padding: 45px;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding: 70px;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
   background-size: cover;
 }
-
-.sentadillas {
+.body__main .sentadillas {
   background-image: url(../assets/img/sentadillas.jpg);
-  padding: 45px;
+  padding: 70px;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
-
-.dominadas {
+.body__main .dominadas {
   background-image: url(../assets/img/dominadas.jpg);
-  padding: 45px;
+  padding: 70px;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
-}
-
-.abdominales {
-  background-image: url(../assets/img/abdominales.jpg);
-  padding: 50px;
-  background-size: auto;
+  background-size: cover;
   background-position-x: center;
+  background-repeat: no-repeat;
+}
+.body__main .abdominales {
+  background-image: url(../assets/img/abdominales.jpg);
+  padding: 70px;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
-
-.buerpee {
+.body__main .buerpee {
   background-image: url(../assets/img/burpee.jpg);
-  padding: 45px;
+  padding: 70px;
   background-repeat: no-repeat;
   background-repeat: repeat-x;
   background-size: cover;
@@ -418,20 +424,14 @@ button:hover {
   background-blend-mode: soft-light;
 }
 
-.DivRutinas {
-  margin: 10vh;
-  padding: 3vh;
-  text-align: center;
-  color: rgb(252, 246, 246);
-  text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+@media (max-width: 768px) {
+  .DivRutinas {
+    padding: 5px;
+  }
+  .ParrafoRutinas {
+    font-size: medium;
+  }
 }
-
-.ParrafoRutinas {
-  text-align: center;
-  color: rgb(211, 198, 198);
-  text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em;
-}
-
 /* inciar sass sass --watch sass:estilos*/
 
 /*# sourceMappingURL=sass.css.map */

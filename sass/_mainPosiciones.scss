@@ -1,8 +1,24 @@
 .button-menu{
-    color: antiquewhite;
+    color: rgb(252, 251, 249);
     display: flex;
     flex-wrap: wrap;
     background-size: 30px;
     justify-content: center;
     gap: 3px;
+
+    }
+    .card2{
+        background-color: black;
+        display: flex;
+        align-items: center;
+
+        .tituloPosiciones{
+            background-color: black;
+            font-size: 45px;
+        }
+    
 }
+
+
+
+   

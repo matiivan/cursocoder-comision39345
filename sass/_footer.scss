@@ -1,13 +1,19 @@
 
 
-    .body__footer {
-    @include footer(10px,200px,flex,center,column)
+ .body__footer{
+    @include footer(10px,200px,flex,center,column);
+
+
+    .body__footer__p{
+        font-size: 20px;
     }
 
-  .body__footer__div {
+    .body__footer__div{
         display:flex;
-    }
-        
+        align-items: center;
+    
+
+    }}
 
         
         .body__footer__div a img {

@@ -1,85 +1,108 @@
+
+.body__main{
 .h1Rutinas{
-    font-style:italic;
-    text-decoration:line;
-    color: rgb(245, 243, 243); 
-    text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
-    margin-bottom: 20vh;}
 
+        font-style:italic;
+        text-decoration:line;
+        color: rgb(245, 243, 243); 
+        text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+        margin-bottom: 20vh;
+        font-size: 55px;
+    }
 .correr{
-    background-image: url(../assets/img/correr.jpg);
-    padding: 45px;
-    background-repeat:repeat-x;
-    background-size:cover;
-    align-content:normal;
-    
+background-image: url(../assets/img/correr.jpg);
+padding: 70px;
+background-size:center;
+align-content:normal;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgb(50, 50,50);
+background-blend-mode: soft-light;
+}
+.DivRutinas{
+margin: 10vh;
+padding: 3vh;
+text-align: center;
+color: rgb(252, 246, 246); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 10px;
+font-size: 40px;
 
-    background-color: rgb(50, 50,50);
-    background-blend-mode: soft-light;
     }
 
+.ParrafoRutinas{
+ 
+text-align: center;
+color: rgb(211, 198, 198); text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em;
+font-size: 40px;
+
+
+}
+
 .flexiones{
-    background-image: url(../assets/img/flexiones.jpg);
-    padding: 45px;
-    background-color: rgb(50, 50,50);
-    background-blend-mode: soft-light;
-    background-size:cover;
+background-image: url(../assets/img/flexiones.jpg);
+background-size:cover;
+background-position-x:center;
+background-repeat: no-repeat;
+padding: 70px;
+background-color: rgb(50, 50,50);
+background-blend-mode: soft-light;
+background-size:cover;
+
 
 }
 
 .sentadillas{
     background-image: url(../assets/img/sentadillas.jpg);
-    padding: 45px;
+    padding: 70px;
     background-color: rgb(50, 50,50);
     background-blend-mode: soft-light;
 }
 
 .dominadas{
-    background-image: url(../assets/img/dominadas.jpg);
-    padding: 45px;
-    background-color: rgb(50, 50,50);
-    background-blend-mode: soft-light;
-    
+background-image: url(../assets/img/dominadas.jpg);
+padding: 70px;
+background-color: rgb(50, 50,50);
+background-blend-mode: soft-light;
+background-size:cover;
+background-position-x:center;
+background-repeat: no-repeat;
 }
-    
+
 .abdominales{
-    background-image: url(../assets/img/abdominales.jpg);
-    padding: 50px; 
-    background-size:auto;
-    background-position-x:center;
-    background-color: rgb(50, 50,50);
-    background-blend-mode: soft-light;
+background-image: url(../assets/img/abdominales.jpg);
+padding: 70px; 
+background-size:cover;
+background-position-x:center;
+background-repeat: no-repeat;
+background-color: rgb(50, 50,50);
+background-blend-mode: soft-light;
 
 }
-
 .buerpee{
-    background-image: url(../assets/img/burpee.jpg);
-    padding: 45px;
-    background-repeat: no-repeat;
-    background-repeat:repeat-x;
-    background-size:cover;
-    align-content:  center;
-    
-    
-    background-color: rgb(50, 50,50);
-    background-blend-mode: soft-light;
-
-}
+background-image: url(../assets/img/burpee.jpg);
+padding: 70px;
+background-repeat: no-repeat;
+background-repeat:repeat-x;
+background-size:cover;
+align-content:  center;
+background-color: rgb(50, 50,50);
+background-blend-mode: soft-light;
 
 
-.DivRutinas{
-    
-    margin: 10vh;
-    padding: 3vh;
-    text-align: center;
-    color: rgb(252, 246, 246); text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
-   
-    
+
+
+}}
+
+
+  @media (max-width: 768px) {
+    .DivRutinas {
+      padding: 5px;
     }
-    
-    
-    
-.ParrafoRutinas{
-    
-        text-align: center;
-        color: rgb(211, 198, 198); text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em}
-    
+  
+    .ParrafoRutinas {
+      font-size: medium;
+    }
+  }
+  
